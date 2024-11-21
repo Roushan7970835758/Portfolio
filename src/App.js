@@ -8,14 +8,17 @@ import WorkExp from './pages/WorkExp/WorkExp.js';
 import Contact from './pages/Contact/Contact.js';
 import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from "./context/ThemeContext";
+import MobileNav from "./components/MobileNav/MobileNav.js";
 
 function App() {
   const[theme] = useTheme()
   return (
     <>
     <div id={theme} className="bgColor">
+    <MobileNav/>
     <Layout />
       <div className="container">
+        
         <About />
         <Techstack />
         <Projects/>
