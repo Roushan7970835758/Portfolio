@@ -1,6 +1,6 @@
 .mobile-nav{
     overflow: hidden;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -12,9 +12,12 @@
     background-color: #1e1e1e;
     padding: 8px;
 }
+
+
 .mobile-nav-header .mobile-nav-icon{
 color: white;
 cursor: pointer;
+
 }
 
 .mobile-nav-title{
@@ -24,6 +27,15 @@ cursor: pointer;
     text-transform: capitalize;
     vertical-align: middle;
     font-size: 20px;
+}
+
+.mobile-nav-menu .nav-items{
+    height: auto;
+    width: 200px;
+    background-color: #1e1e1e;
+    padding:10px;
+    padding-bottom: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 @media (min-width:600px) {

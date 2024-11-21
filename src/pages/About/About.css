@@ -6,18 +6,16 @@
   }
   
   .about-img img {
-    
-    border-radius: 10px;
+    border-radius: 100px;
     width: 75%;
     height: 502px;
-    margin-right:10px;
   }
   
   .about-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: -80px;
+    /* margin-left: -50px; */
     align-items: center;
   }
   
