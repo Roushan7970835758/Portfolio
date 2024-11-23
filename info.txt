@@ -1,0 +1,1 @@
+npm i build:- to get the react file in smaller size so that can upload on git reposetory
