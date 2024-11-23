@@ -3,7 +3,6 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
 
-
 //dotevn configrueation
 dotenv.config();
 
@@ -15,11 +14,20 @@ app.use(cors());
 app.use(express.json());
 
 //static files access
-app.use(express.static(path.join(__dirname, "../frontend/portfolio/node_modules/build")));
+app.use(
+  express.static(
+    path.join(__dirname, "../frontend/portfolio/node_modules/build")
+  )
+);
 
 //routes
 app.use("/api/v1/portfolio", require("./routes/portfolioRoutes"));
 
+app.get("*", function (req, res) {
+  res.sendFile(
+    path.join(__dirname, ".../frontend/portfolio/node_modules/build/index.html")
+  );
+});
 //port
 const PORT = process.env.PORT || 8080;
 
