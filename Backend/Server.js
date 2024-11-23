@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
-import buildPaht from "../"
+import buildPaht from "../";
 
 //dotevn configrueation
 dotenv.config();
@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 //static files access
-app.use(express.static(path.join(__dirname,"../")))
+app.use(express.static(path.join(__dirname, "../")));
 
 //routes
 app.use("/api/v1/portfolio", require("./routes/portfolioRoutes"));
